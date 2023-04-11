@@ -8,7 +8,7 @@ const Form = () => {
         e.preventdefault();
         setTimeout(() => {
             alert(`You said ${message} to ${to}`)
-        })
+        }, 1000);
     }
 
     return(
@@ -23,7 +23,7 @@ const Form = () => {
                     <option value="Bob">Bob</option>
                 </select>
             </label>
-
+            <br/>
             <textarea
                 placeholder="Message"
                 value={message}

@@ -4,7 +4,7 @@ const user = {
   imgageSize: 90,
 };
 
-function Profile() {
+const Profile = () => {
     return(
         <>
             <h1>{user.name}</h1>
@@ -13,7 +13,7 @@ function Profile() {
                 src={user.imageUrl}
                 alt={'Photo of' + user.name}
                 style={{
-                    width: user.imageUrl,
+                    width: user.imgageSize,
                     height: user.imgageSize
                 }}
             />

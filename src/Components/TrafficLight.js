@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-const TrafficLight =() => {
+const TrafficLight = () => {
     const [walk, setWalk] = useState(true);
 
     const handleClick = () => {

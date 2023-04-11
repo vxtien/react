@@ -1,4 +1,4 @@
-function MyButton() {
+const MyButton = () => {
     function handleClick() {
         alert('You clicked me!');
     }

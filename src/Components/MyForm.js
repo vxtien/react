@@ -22,7 +22,7 @@ const MyForm = () => {
         setUserInfor(user);
         //call api to post data to server
     }
-
+    
     console.log(userInfor);
     // console.log(firstName, lastName);
 

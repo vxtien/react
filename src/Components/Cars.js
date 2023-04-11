@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function BaiTapDoiMauXe() {
+const Cars = () => {
   // mau hong: https://porsche-vietnam.vn/wp-content/uploads/2021/01/j1-taycan-modelimage-sideshot.png
   // mau xanh duong: https://porsche-vietnam.vn/wp-content/uploads/2020/08/j1-taycan-4s-modelimage-sideshot-1600x900.png
 
@@ -64,4 +64,4 @@ function BaiTapDoiMauXe() {
   );
 }
 
-export default BaiTapDoiMauXe;
+export default Cars;

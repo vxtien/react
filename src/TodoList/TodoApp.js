@@ -1,7 +1,7 @@
 import { useState } from "react";
 import TodoForm from "./TodoForm";
 import TodoListContainer from "./TodoListContainer";
-import "./todo-app.css"
+import "../Style/todo-app.css"
 
 const TodoApp = () => {
     const [todoList, setTodoList] = useState([]);
@@ -14,7 +14,7 @@ const TodoApp = () => {
       <TodoListContainer tasks={todoList}/>
 
         <div className="clear-all-items">
-            <p>You have 4 pending task</p>
+            <p>You have 0 pending task</p>
             <button>Clear all</button>
         </div>
 
