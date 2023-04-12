@@ -24,11 +24,20 @@ import MyApp from "./example/MyApp";
 import HomePage from "./Components/HomePage";
 import TicTacToe from "./TicTacToe/TicTacToe";
 import EditPofile from "./Managin State/EditProfile";
+import Scoreboard from "./Components/Scoreboard";
+import Canvas from "./Canvas/Canvas";
+import ShoppingCart from "./Components/ShoppingCart";
+import Menu from "./Managin State/Menu";
+import TravelPlan from "./Managin State/TravelPlan/TravelPlan";
+import Shophouse from "./Managin State/Shophouse/Shophouse";
+import Accordion from "./Managin State/Accordion";
+import FilterableList from "./Managin State/SearchBar/FilterableList";
+
 
 
 const App = () => {
   return (
-    <div className="main">
+    <div className="container">
       <div className="app">
         <ul>
           <li>
@@ -97,8 +106,16 @@ const App = () => {
           
         </ul>
       </div>
-      
-      <EditPofile/>
+
+      {/* <FilterableList/> */}
+      {/* <Accordion/> */}
+      {/* <Shophouse/> */}
+      {/* <TravelPlan/> */}
+      {/* <Menu/> */}
+      {/* <ShoppingCart/> */}
+      {/* <EditPofile/> */}
+      {/* <Scoreboard/> */}
+      {/* <Canvas/> */}
 
       <Routes>
         <Route path="/" element={<HomePage/>}/>

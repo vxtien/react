@@ -11,12 +11,16 @@ const Gallery = () => {
     const handleNextClick = () => {
         if (next) {
             setIndex(index + 1);
+        } else {
+            setIndex(0)
         }
     }
 
     const handlePrevClick = () => {
         if (prev) {
             setIndex(index - 1);
+        } else {
+            setIndex(sculptureList.length - 1)
         }
     }
 
