@@ -6,13 +6,11 @@ const initialPosition = {
     x: 0,
     y: 0
 };
-
 const Canvas = () => {
     const [shape, setShape] = useState({
         color: 'orange',
         position: initialPosition
     })
-
     const handleMove = (dx, dy) => {
         setShape({
             ...shape,
@@ -22,26 +20,23 @@ const Canvas = () => {
             }
         })
     }
-
     const handleColorChange = (e) => {
         setShape({
             ...shape,
             color: e.target.value
         })
     }
-
     return(
         <>
             <select
                 value={shape.color}
                 onChange={handleColorChange}
-
+                style={{zIndex:1}}
             >
                 <option>orange</option>
                 <option>lightpink</option>
                 <option>aliceblue</option>
             </select>
-
             <Background position={initialPosition}/>
 
             <Box
@@ -54,5 +49,4 @@ const Canvas = () => {
         </>
     )
 }
-
 export default Canvas;
