@@ -1,23 +1,18 @@
 import { useState } from "react";
-
 const EditPofile = () => {
     const [isEditing, setIsEditing] = useState(false)
     const [firstName, setFirstName] = useState('Jane');
     const [lastName, setLastName] = useState('Jacobs');
-
     const handleSubmit = (e) => {
         e.preventDefault();
         setIsEditing(!isEditing)
     }
-
     const handleChangeFistName = (e) => {
         setFirstName(e.target.value)
     }
-
     const handleChangeLastName = (e) => {
         setLastName(e.target.value)
     }
-
     return(
         <form onSubmit={handleSubmit}>
             <label>

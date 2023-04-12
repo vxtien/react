@@ -22,5 +22,4 @@ const PackingList = ({ items, onChangeItem, onDeleteItem }) => {
     </ul>
   );
 };
-
 export default PackingList;

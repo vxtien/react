@@ -1,14 +1,11 @@
 import { useState } from 'react';
 import { foods, filterItems } from './data-foods';
-
 const FilterableList = () => {
     const [query, setQuery] = useState('');
     const results = filterItems(foods, query);
-
     const handleChange = (e) => {
         setQuery(e.target.value);
     }
-
     return(
         <>
             <SearchBar
@@ -21,7 +18,6 @@ const FilterableList = () => {
     )
 }
 export default FilterableList;
-
 const SearchBar = ({query, onChange}) => {
     return(
         <label>
@@ -29,7 +25,6 @@ const SearchBar = ({query, onChange}) => {
         </label>
     )
 }
-
 const List = ({items}) => {
     return(
         <table>

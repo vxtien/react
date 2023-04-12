@@ -1,5 +1,4 @@
 const AppToolBar = () => {
-
     return(
         <ToolBar
             onPlayMoive={()=> alert('Playing!')}
@@ -7,9 +6,7 @@ const AppToolBar = () => {
         />
     )
 } 
-
 export default AppToolBar;
-
 const ToolBar = ({onPlayMoive, onUpLoadImage}) => {
     return(
         <>
@@ -18,7 +15,6 @@ const ToolBar = ({onPlayMoive, onUpLoadImage}) => {
         </>
     )
 }
-
 const Button =({onClick, children}) => {
     return(
         <button onClick={onClick}>{children}</button>

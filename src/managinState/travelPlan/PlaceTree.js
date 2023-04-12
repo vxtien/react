@@ -1,7 +1,6 @@
 const PlaceTree = ({id, parentId, placesById, onComplete}) => {
     const place = placesById[id];
     const childIds = place.childIds;
-
     return (
         <li>
             {place.title}

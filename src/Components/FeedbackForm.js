@@ -1,9 +1,7 @@
 import { useState } from "react";
-
 const FeedbackForm = () => {
   const [isSent, setIsSent] = useState(false);
   const [message, setMassage] = useState("");
-
   if (isSent) {
     return <h1>Thank you!</h1>;
   } else {
@@ -21,7 +19,6 @@ const FeedbackForm = () => {
             value={message}
             onChange={(e) => setMassage(e.target.value)}
           />
-
           <button type="submit">Send</button>
         </form>
         <FeedbackForm2 />
@@ -29,7 +26,6 @@ const FeedbackForm = () => {
     );
   }
 };
-
 export default FeedbackForm;
 
 const FeedbackForm2 = () => {
@@ -37,6 +33,5 @@ const FeedbackForm2 = () => {
     const name = prompt("What is your name?");
     alert(`Hello, ${name}!`);
   };
-
   return <button onClick={handleClick}>Greet</button>;
 };

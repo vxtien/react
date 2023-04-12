@@ -1,22 +1,16 @@
 import { useState } from 'react';
 import AddItem from './AddItem';
 import PackingList from './PackingList';
-
 const initialItems = [
   {id: 0, title: 'Warm socks', packed: true},
   {id: 1, title: 'Travel journal', packed: false},
   {id: 2, title: 'Watercolors', packed: false},
 ];
-
 const Shophouse = () => {
   const [items, setItems] = useState(initialItems);
-  console.log("item:" ,items);
   const total = items.length;
   const packed = items.filter(item => item.packed).length;
-
   const handleAddItem = (title) => {
-    console.log('title:',title);
-
     setItems([
       ...items,
       {
@@ -26,7 +20,6 @@ const Shophouse = () => {
       }
     ]);
   } 
-
   const handleChangeItem = (nextItem) => {
     setItems(items.map(item => {
       if (item.id === nextItem.id) {
@@ -36,12 +29,9 @@ const Shophouse = () => {
       }
     }))
   }
-
   const handleDeleteItem = (itemId) => {
     setItems(items.filter(item => item.id !== itemId))
   }
-
-
   return (
     <>
       <AddItem onAddItem={handleAddItem}/>
@@ -55,5 +45,4 @@ const Shophouse = () => {
     </>
   );
 }
-
 export default Shophouse;

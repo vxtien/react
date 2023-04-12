@@ -4,7 +4,7 @@ import Box from "./Box";
 
 const initialPosition = {
     x: 0,
-    y: 200
+    y: 0
 };
 
 const Canvas = () => {
@@ -35,6 +35,7 @@ const Canvas = () => {
             <select
                 value={shape.color}
                 onChange={handleColorChange}
+
             >
                 <option>orange</option>
                 <option>lightpink</option>

@@ -3,7 +3,6 @@ const products = [
     {title: 'Gralic', isFruit: false, id: 2},
     {title: 'Apple', isFruit: true, id: 3},
 ];
-
 const ShoppingList = () => {
     const listItems = products.map(item => 
         <li
@@ -13,14 +12,11 @@ const ShoppingList = () => {
             {item.title}
         </li>
         )
-
-
     return(
         <ul style={{listStyle: "none"}}>
             {listItems}
         </ul>
     )
 }
-
 export default ShoppingList;
 

@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 const initialProducts = [
     {
         id: 0,
@@ -17,10 +16,8 @@ const initialProducts = [
         count: 1,
     },
 ]
-
 const ShoppingCart = () => {
     const [products, setProducts] = useState(initialProducts);
-
     const handleIncreaseClick = (productId) => {
         setProducts(products.map(product => {
             if (product.id === productId) {
@@ -33,7 +30,6 @@ const ShoppingCart = () => {
             }
         }))
     }
-
     const handleDecreaseClick = (productId) => {
         let nextProducts = products.map(product => {
             if (product.id === productId) {
@@ -48,7 +44,6 @@ const ShoppingCart = () => {
         nextProducts = nextProducts.filter(p => p.count >= 0);
         setProducts(nextProducts)
     }
-
     return(
         <ul>
             {products.map(product => (

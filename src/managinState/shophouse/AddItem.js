@@ -1,8 +1,6 @@
-import { useState } from "react"
-
+import { useState } from "react";
 const AddItem = ({onAddItem}) => {
     const [title, setTitle] = useState('');
-
     const handleChangeInput = (e) => {
         setTitle(e.target.value)
     }
@@ -12,7 +10,6 @@ const AddItem = ({onAddItem}) => {
     const handleRemoveText = () => {
         setTitle('')
     }
-
     return(
         <>
             <input 
@@ -20,7 +17,6 @@ const AddItem = ({onAddItem}) => {
                 onChange={handleChangeInput}
                 placeholder="Add item"
             />
-
             <button onClick={()=>{handleAddItem(); handleRemoveText()}}>Add</button>
         </>
     )

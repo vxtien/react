@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../Style/ColorBox.css"
+import "../styles/color-box.css"
 
 function ColorBox() {
     let [myColor, setMyColor] = useState("red");

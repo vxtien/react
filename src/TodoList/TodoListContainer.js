@@ -1,5 +1,4 @@
 import TodoItem from "./TodoItem";
-
 const TodoListContainer = (props) => {
   const { tasks } = props;
   return (
@@ -10,5 +9,4 @@ const TodoListContainer = (props) => {
     </div>
   );
 };
-
 export default TodoListContainer;

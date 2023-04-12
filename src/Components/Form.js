@@ -1,16 +1,13 @@
 import { useState } from "react"
-
 const Form = () => {
     const [to, setTo] = useState('Ali');
     const [message, setMessage] = useState('Hi');
-
     const handleSubmit = (e) => {
         e.preventdefault();
         setTimeout(() => {
             alert(`You said ${message} to ${to}`)
         }, 1000);
     }
-
     return(
         <form>
             <label onSubmit={handleSubmit}>
@@ -29,10 +26,8 @@ const Form = () => {
                 value={message}
                 onChange={e => setMessage(e.target.value)}
             />
-
             <button type="submit">Send</button>
         </form>
     )
 }
-
 export default Form;

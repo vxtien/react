@@ -3,7 +3,6 @@ const TodoForm = (props) => {
     const onSubmit = (e) => {
         e.preventDefault();        
         const todoText = e.target.todoInput.value;
-        
         setTodoList((prevState)=> {
             const newTodoItem = {
                 title: todoText,
@@ -13,7 +12,6 @@ const TodoForm = (props) => {
             return [...prevState, newTodoItem];
         })
     }
-
   return (
     <form className="todo-form" onSubmit={onSubmit}>
       <input className="todo-input" type="text" name="todoInput" placeholder="Enter your task"/>
@@ -21,5 +19,4 @@ const TodoForm = (props) => {
     </form>
   );
 };
-
 export default TodoForm;

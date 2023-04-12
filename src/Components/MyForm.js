@@ -1,31 +1,19 @@
 import { useState } from "react";
-
 const MyForm = () => {
-    // const [firstName, setFirstName] = useState("");
-    // const [lastName, setLastName] = useState("");
-
     const [userInfor, setUserInfor] = useState({
         firstName: "",
         lastName: "",
     })
-
     const onSubmit = (e) => {
         e.preventDefault();
-
         const firstNameValue = e.target.firstName.value;
         const lasttNameValue = e.target.lastName.value;
-        
         const user = {
             firstName: firstNameValue,
             lastName: lasttNameValue
         }
         setUserInfor(user);
-        //call api to post data to server
     }
-    
-    console.log(userInfor);
-    // console.log(firstName, lastName);
-
   return (
     <form onSubmit={onSubmit}>
       <div>
@@ -44,5 +32,4 @@ const MyForm = () => {
     </form>
   );
 };
-
 export default MyForm;

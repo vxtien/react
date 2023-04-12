@@ -3,7 +3,6 @@ const user = {
   imageUrl: "https://i.imgur.com/yXOvdOSs.jpg",
   imgageSize: 90,
 };
-
 const Profile = () => {
     return(
         <>
@@ -20,5 +19,4 @@ const Profile = () => {
         </>
     )
 }
-
 export default Profile;

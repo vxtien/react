@@ -1,13 +1,10 @@
 import { useState } from "react"
-
 const TrafficLight = () => {
     const [walk, setWalk] = useState(true);
-
     const handleClick = () => {
         setWalk(!walk);
         alert(walk ? 'stop is next' : 'step is next')
     }
-
     return(
         <>
             <button onClick={handleClick}> 
@@ -19,5 +16,4 @@ const TrafficLight = () => {
         </>
     )
 }
-
 export default TrafficLight;

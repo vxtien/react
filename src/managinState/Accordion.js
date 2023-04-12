@@ -1,7 +1,5 @@
 import { useState } from "react"
-
 const Panel = ({title, children, isActive, onShow}) => {
-
     return(
         <div>
             <h3>{title}</h3>
@@ -15,7 +13,6 @@ const Panel = ({title, children, isActive, onShow}) => {
         </div>
     )
 }
-
 const Accordion = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     return(

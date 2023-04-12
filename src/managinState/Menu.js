@@ -1,19 +1,15 @@
 import { useState } from "react";
-
 const initialItems = [
     {title: 'pretzels', id: 0},
     {title: 'crispy seaweed', id: 1},
     {title: 'granola bar', id: 2},
 ];
-
 const Menu = () => {
     const [items, setItems] = useState(initialItems);
     const [selectedId, setSelectedId] = useState(0);
-
     const selectedItem = items.find(item => 
         item.id === selectedId
     )
-
     const handleItemChange = (id, e) => {
         setItems(items.map(item => {
             if (item.id === id) {
@@ -26,8 +22,6 @@ const Menu = () => {
             }
         }))
     }
-
-
     return(
         <>
             <h2>What's your travel snack?</h2>
