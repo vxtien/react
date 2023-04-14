@@ -23,6 +23,7 @@ const ExampleUseContext = () => {
   );
 };
 export default ExampleUseContext;
+
 const List = () => {
   return (
     <ul>

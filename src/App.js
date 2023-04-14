@@ -2,8 +2,7 @@ import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import { components } from "./data-components";
 import "./App.css";
-import ExampleUseContext from "./managinState/useContext/ExampleUseContext";
-
+import EffectAndRef from "./escapeHatches/exampleUseEffectAndUseRef/EffectAndRef";
 const App = () => {
   return (
     <div className="container">
@@ -15,8 +14,7 @@ const App = () => {
         </ul>
       </div>
 
-            <ExampleUseContext/>
-        
+      {/* <EffectAndRef/> */}
       <Routes>
         {components.map(({link, component}) => 
           <Route path={link} element={component}/>

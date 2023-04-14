@@ -29,6 +29,11 @@ import Shophouse from "./managinState/shophouse/Shophouse";
 import Accordion from "./managinState/Accordion";
 import FilterableList from "./managinState/searchBar/FilterableList";
 import TaskApp from "./managinState/taskApp/TaskApp";
+import ExampleUseContext from "./managinState/useContext/ExampleUseContext";
+import ContextComponent from "./managinState/Ex";
+import Stopwatch from "./escapeHatches/Stopwatch";
+import Chat from "./escapeHatches/Chat";
+import VideoPlayer from "./escapeHatches/VideoPlayer";
 
 export const components = [
     {
@@ -185,5 +190,30 @@ export const components = [
         link: '/canvas',
         title: 'Canvas',
         component: <Canvas/>
+    },
+    {
+        link: '/example-use-context',
+        title: 'ExampleUseContext1',
+        component: <ContextComponent/>
+    },
+    {
+        link: '/ex',
+        title: 'ExampleUseContext2',
+        component: <ExampleUseContext/>
+    },
+    {
+        link: '/stopwatch',
+        title: 'Stopwatch',
+        component: <Stopwatch/>
+    },
+    {
+        link: '/chat',
+        title: 'Chat',
+        component: <Chat/>
+    },
+    {
+        link: '/video-play',
+        title: 'VideoPlayer',
+        component: <VideoPlayer/>
     }
 ]
