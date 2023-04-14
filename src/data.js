@@ -19,23 +19,11 @@ import Gallery from "./components/UsersList";
 import MyApp1 from "./components/UseState";
 import MyApp from "./example/MyApp";
 import TicTacToe from "./tictok/TicTacToe"
-import EditPofile from "./managinState/EditProfile";
 import Scoreboard from "./components/Scoreboard";
 import Canvas from "./canvas/Canvas";
 import ShoppingCart from "./components/ShoppingCart";
-import Menu from "./managinState/Menu";
-import TravelPlan from "./managinState/travelPlan/TravelPlan";
-import Shophouse from "./managinState/shophouse/Shophouse";
-import Accordion from "./managinState/Accordion";
-import FilterableList from "./managinState/searchBar/FilterableList";
-import TaskApp from "./managinState/taskApp/TaskApp";
-import ExampleUseContext from "./managinState/useContext/ExampleUseContext";
-import ContextComponent from "./managinState/Ex";
-import Stopwatch from "./escapeHatches/Stopwatch";
-import Chat from "./escapeHatches/Chat";
-import VideoPlayer from "./escapeHatches/VideoPlayer";
 
-export const components = [
+export const data = [
     {
         link: '/',
         title: 'Home',
@@ -140,46 +128,11 @@ export const components = [
         link: '/tic-tac-toe',
         title: 'TicTacToe',
         component: <TicTacToe/>
-    },    
-    {
-        link: '/task-app',
-        title: 'TaskApp',
-        component: <TaskApp/>
-    }, 
-    {
-        link: '/filterable-list',
-        title: 'FilterableList',
-        component: <FilterableList/>
-    }, 
-    {
-        link: '/accordion',
-        title: 'Accordion',
-        component: <Accordion/>
-    },
-    {
-        link: '/shophouse',
-        title: 'Shophouse',
-        component: <Shophouse/>
-    },
-    {
-        link: '/travel-plan',
-        title: 'TravelPlan',
-        component: <TravelPlan/>
-    },
-    {
-        link: '/menu',
-        title: 'Menu',
-        component: <Menu/>
-    },
+    },      
     {
         link: '/shopping-cart',
         title: 'ShoppingCart',
         component: <ShoppingCart/>
-    },
-    {
-        link: '/edit-profile',
-        title: 'EditProfile',
-        component: <EditPofile/>
     },
     {
         link: '/scoreboard',
@@ -191,29 +144,4 @@ export const components = [
         title: 'Canvas',
         component: <Canvas/>
     },
-    {
-        link: '/example-use-context',
-        title: 'ExampleUseContext1',
-        component: <ContextComponent/>
-    },
-    {
-        link: '/ex',
-        title: 'ExampleUseContext2',
-        component: <ExampleUseContext/>
-    },
-    {
-        link: '/stopwatch',
-        title: 'Stopwatch',
-        component: <Stopwatch/>
-    },
-    {
-        link: '/chat',
-        title: 'Chat',
-        component: <Chat/>
-    },
-    {
-        link: '/video-play',
-        title: 'VideoPlayer',
-        component: <VideoPlayer/>
-    }
 ]

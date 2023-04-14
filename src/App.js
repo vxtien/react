@@ -1,8 +1,8 @@
 import React from "react";
 import { Routes, Route, Link } from "react-router-dom";
-import { components } from "./data-components";
+import { data } from "./data";
 import "./App.css";
-import EffectAndRef from "./escapeHatches/exampleUseEffectAndUseRef/EffectAndRef";
+
 const App = () => {
   return (
     <div className="container">
@@ -13,8 +13,6 @@ const App = () => {
           ))}
         </ul>
       </div>
-
-      {/* <EffectAndRef/> */}
       <Routes>
         {components.map(({link, component}) => 
           <Route path={link} element={component}/>
